@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* General */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #0072bc, #d39e27);
+    padding: 15px 30px;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Carousel */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+}
+
+.carousel-item {
+    min-width: 100%;
+    position: relative;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.caption {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.caption h1 {
+    font-size: 50px;
+}
+
+.caption p {
+    font-size: 20px;
+}
+
+/* Dots */
+.dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: #d39e27;
+}
+
+/* General */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Section Title */
+.categories{
+    padding-bottom: 40px;
+}
+.categories h2 {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+
+.categories h2 span {
+    background: linear-gradient(to right, #0072bc, #d39e27);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* General */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Section Title */
+.categories h2 {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+
+.categories h2 span {
+    background: linear-gradient(to right, #0072bc, #d39e27);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+/* General */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.categories h2 {
+            font-size: 35px;
+            font-weight: bold;
+            text-align: center;
+            margin: 20px 0;
+            color: #333;
+        }
+        .categories h2 span {
+            background: linear-gradient(to right, #0072bc, #d39e27);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            justify-items: center;
+            padding: 20px;
+        }
+        .product {
+            width: 250px;
+            height: 250px;
+            background: #f8f8f8;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .product img {
+            width: 80%;
+            height: auto;
+            object-fit: contain;
+            display: block;
+            margin: auto;
+        }
+
+        /* .product::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 10%;
+            width: 80%;
+            height: 4px;
+            background: linear-gradient(to right, #0072bc, #d39e27);
+            border-radius: 2px;
+        } */
+        
+        .product p {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+            color: #333;
+            text-align: center;
+            padding-top: 8px;
+            border-top: 1px solid gray;
+        }
+        .product p span {
+            background: linear-gradient(to right, #0072bc, #d39e27);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 0 auto;
+            
+        
+
+        }
+        .last-row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        @media (max-width: 900px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 600px) {
+            .product-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+/* Footer Styling */
+footer {
+    background: linear-gradient(to bottom, #1d78b5, #603813);
+    color: white;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Footer Container */
+.footer {
+            background: linear-gradient(to bottom, #1d79a0, #4a3a2c);
+            color: white;
+            font-family: Arial, sans-serif;
+            padding-top: 80px;
+            text-align: center;
+            position: relative;
+        }
+        
+        /* .footer-top {
+            position: absolute;
+            top: -800px;
+            left: 0;
+            width: 100%;
+        }
+         */
+        /* .footer-top-image {
+            width: 100%;
+            display: block;
+        } */
+    
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 20px;
+        }
+    
+        .footer-left {
+            text-align: left;
+        }
+    
+        .footer-left p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+    
+        .footer-links {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+        }
+    
+        .footer-column {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .footer-column a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid white;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+    
+        .footer-column a:hover {
+            color: #ffcc00;
+        }
+    
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            background: #3b2a1d;
+            font-size: 14px;
+        }
+    </style>
+    
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eimco Elecon</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <!-- <img src="logo.png" alt="Eimco Elecon"> -->
+            <span>Eimco Elecon</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="#">Network</a></li>
+            <li><a href="#">Group Cos</a></li>
+        </ul>
+    </nav>
+
+    <!-- Carousel -->
+    <div class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/img/Eimco Elecon website-09.jpg" alt="Excavator">
+                <div class="caption">
+                    <!-- <h1>Lorem ipsum</h1>
+                    <p>Lorem ipsum dolor sit</p> -->
+                </div>
+            </div>
+        </div>
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+    
+    <section class="categories">
+        <h2><span>Cate</span>gories</h2>
+        <div class="product-grid">
+            <div class="product"><img src="img/img/Adobe Express - file (45).png" alt="Air Motors"><p><span>Air Motors</span> </p></div>
+            <div class="product"><img src="img/img/Adobe Express - file (46)-Picsart-AiImageEnhancer.png" alt="Coal Hauler"><p><span>Coal Hauler</span> </p></div>
+            <div class="product"><img src="img/img/feeder-breaker--660x495.png" alt="Continuous Miner Package"><p><span>Continuous Miner Package</span> </p></div>
+            <div class="product"><img src="img/img/Adobe Express - file (47).png" alt="Drill Machine"><p><span>Drill Machine</span> </p></div>
+            <div class="product"><img src="img/img/Adobe Express - file (49).png" alt="Load Haul Dumper"><p><span>Load Haul Dumper (Coal Mining) </span> </p></div>
+            <div class="product"><img src="img/img/Adobe Express - file (44).png" alt="Load Haul Dumper"><p><span>Load Haul Dumper (Metal Mining) </span> </p></div>
+            <div class="product"><img src="img/img/Adobe Express - file (50).png" alt="Product 7"><p><span>Low Profile Dump Truck</span> </p></div>
+            <div class="product"><img src="img/img/Adobe Express - file (51).png" alt="Product 8"><p><span>Pilling Ring</span> </p></div>
+            <div class="product"><img src="img/img/Adobe Express - file (52).png" alt="Product 9"><p><span>Rocker Shovel Loader</span> </p></div>
+        </div>
+        <div class="last-row">
+            <div class="product"><img src="img/img/Adobe Express - file (53).png" alt="Product 10"><p><span>Side Dump Loader</span></p></div>
+            <div class="product"><img src="img/img/Adobe Express - file (55).png" alt="Product 11"><p><span>Wheel Loader</span></p></div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <!-- <div class="footer-top">
+            <img src="img/img/Adobe Express - file (41).png" alt="Construction Equipment Silhouette" class="footer-top-image">
+        </div> -->
+        <div class="footer-content">
+            <div class="footer-left">
+                <p><i class="fas fa-map-marker-alt"></i> V.V. Nagar, Gujarat, India</p>
+                <p><i class="fas fa-phone-alt"></i> +91-2692-230602</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Products</a>
+                    <a href="#">Network</a>
+                    <a href="#">Sitemap</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                <div class="footer-column">
+                    <a href="#">Mission</a>
+                    <a href="#">Infrastructure</a>
+                    <a href="#">Quality Policy</a>
+                    <a href="#">Code of Conduct</a>
+                    <a href="#">Group Companies</a>
+                    <a href="#">Business Risk Management</a>
+                    <a href="#">Company News</a>
+                </div>
+                <div class="footer-column">
+                    <a href="#">Side Dump Loader</a>
+                    <a href="#">Load Haul Dumper</a>
+                    <a href="#">Coal Hauler</a>
+                    <a href="#">Universal Drill Machine</a>
+                    <a href="#">Articulated Wheel Loader</a>
+                    <a href="#">Foundation Equipment</a>
+                    <a href="#">Low Profile Dump Truck</a>
+                    <a href="#">Rocker Shovel Loader</a>
+                    <a href="#">Underground Transport System</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyrights © 2013 Eimco Elecon (India) Limited & All Rights Reserved.</p>
+            <p>Designed & Developed By Elecon Information Technology Limited</p>
+        </div>
+    </footer>
+    
+        
+
+</body>
+</html>
